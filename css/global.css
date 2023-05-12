@@ -103,7 +103,7 @@ section .precentacion .text p {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.776);
 }
-.formacion .logos img {
+.formacion img {
   width: 100px;
 }
 .formacion h3 {
@@ -138,6 +138,7 @@ section .precentacion .text p {
   padding: 1rem;
   margin: 0.5rem;
   font-size: 1rem;
+  background: rgb(218, 214, 214);
 }
 
 .certificados {
@@ -163,8 +164,29 @@ section .precentacion .text p {
 footer .redes {
   text-align: center;
 }
+footer .redes h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 footer .redes img {
-  width: 75px;
+  margin: 1rem;
+  justify-content: space-evenly;
+  width: 55px;
+}
+footer h6 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+footer p {
+  color: rgb(158, 154, 154);
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: -0.5rem;
 }
 
 /*# sourceMappingURL=global.css.map */
