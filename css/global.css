@@ -1,5 +1,4 @@
 body {
-  /* background: rgba(225, 217, 217, 0.689); */
   background: black;
 }
 
@@ -9,7 +8,7 @@ header {
   justify-content: space-between;
   background: rgb(255, 255, 255);
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
 }
 header .logo {
@@ -21,47 +20,74 @@ header nav .nav-link {
   font-size: 1.2rem;
   margin-left: 1rem;
 }
-header nav .navbar-nav .nav-link.active, header nav .navbar-nav .nav-link.show {
-  color: rgb(150, 89, 4);
-  text-decoration: underline;
-}
 header nav .navbar-nav a {
-  color: rgb(93, 64, 64);
+  color: rgb(99, 96, 96);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header nav .navbar-nav a:hover {
   color: rgba(158, 84, 34, 0.989);
   text-decoration: underline;
+  filter: drop-shadow(5px 5px 10px rgb(201, 133, 7));
+}
+header .bg-body-tertiary {
+  background: none !important;
 }
 
-section .name {
+@media (min-width: 992px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 8rem;
+  }
+}
+.main .name {
   text-align: center;
   color: rgb(162, 156, 156);
   padding-top: 7rem;
 }
-section .name span {
+.main .name span {
   text-align: center;
   font-size: 5rem;
   margin: -0.2rem;
   font-family: "Russo One", sans-serif;
 }
-section .apellido {
+@media (min-width: 992px) {
+  .main .name span {
+    font-size: 8rem;
+  }
+}
+.main .apellido {
   margin-top: -2.5rem;
   text-align: center;
   color: rgb(146, 143, 143);
 }
-section .apellido span {
+.main .apellido span {
   text-align: center;
   font-size: 4.5rem;
   margin: -0.2rem;
   font-family: "Russo One", sans-serif;
 }
-section h1 {
+@media (min-width: 992px) {
+  .main .apellido span {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  .main .apellido {
+    margin-top: -6rem;
+  }
+}
+.main h1 {
   text-align: center;
   font-size: 1.3rem;
   color: #ffffff;
 }
-section .precentacion {
+@media (min-width: 992px) {
+  .main h1 {
+    font-size: 2rem;
+  }
+}
+.main .precentacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,26 +95,42 @@ section .precentacion {
   padding: 1rem;
   margin-top: 1rem;
 }
-section .precentacion img {
+.main .precentacion img {
   border-radius: 2% 28% 2% 35%;
   width: 250px;
-  height: 300px;
+  height: 330px;
 }
-section .precentacion .text {
+@media (min-width: 992px) {
+  .main .precentacion img {
+    width: 400px;
+    height: 480px;
+  }
+}
+.main .precentacion .text {
   margin: 2rem;
   color: rgb(244, 241, 241);
   padding: 2rem;
   background: rgba(175, 175, 185, 0.193);
   box-shadow: 1px 5px 23px rgb(79, 77, 76);
 }
-section .precentacion .text h2 {
+.main .precentacion .text h2 {
   font-size: 2rem;
 }
-section .precentacion .text p {
+@media (min-width: 992px) {
+  .main .precentacion .text h2 {
+    font-size: 3rem;
+  }
+}
+.main .precentacion .text p {
   text-align: center;
   font-size: 1rem;
   padding-top: 1rem;
   color: rgba(184, 180, 180, 0.918);
+}
+@media (min-width: 992px) {
+  .main .precentacion .text p {
+    font-size: 1.5rem;
+  }
 }
 
 .sep1 {
@@ -102,6 +144,7 @@ section .precentacion .text p {
   text-align: center;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.776);
+  margin: auto;
 }
 .formacion img {
   width: 100px;
@@ -157,8 +200,19 @@ section .precentacion .text p {
   font-size: 2rem;
   margin: 2rem 0;
 }
+@media (min-width: 992px) {
+  .certificados h5 {
+    font-size: 2.5rem;
+  }
+}
 .certificados img {
   margin: 0.5rem;
+  width: 315px;
+}
+@media (min-width: 765px) {
+  .certificados img {
+    width: 600px;
+  }
 }
 
 footer .redes {
@@ -186,7 +240,7 @@ footer p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: -0.5rem;
+  margin-bottom: -0.5rem;
 }
 
 /*# sourceMappingURL=global.css.map */
