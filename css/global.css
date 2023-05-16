@@ -34,60 +34,65 @@ header .bg-body-tertiary {
 }
 
 @media (min-width: 992px) {
-  .main {
+  main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 8rem;
+    padding: 8rem 2rem;
   }
 }
-.main .name {
+@media (min-width: 1440px) {
+  main {
+    padding: 6rem;
+  }
+}
+main .name {
   text-align: center;
   color: rgb(162, 156, 156);
   padding-top: 7rem;
 }
-.main .name span {
+main .name span {
   text-align: center;
   font-size: 5rem;
   margin: -0.2rem;
   font-family: "Russo One", sans-serif;
 }
 @media (min-width: 992px) {
-  .main .name span {
+  main .name span {
     font-size: 8rem;
   }
 }
-.main .apellido {
+main .apellido {
   margin-top: -2.5rem;
   text-align: center;
   color: rgb(146, 143, 143);
 }
-.main .apellido span {
+main .apellido span {
   text-align: center;
   font-size: 4.5rem;
   margin: -0.2rem;
   font-family: "Russo One", sans-serif;
 }
 @media (min-width: 992px) {
-  .main .apellido span {
+  main .apellido span {
     font-size: 8rem;
   }
 }
 @media (min-width: 992px) {
-  .main .apellido {
+  main .apellido {
     margin-top: -6rem;
   }
 }
-.main h1 {
+main h1 {
   text-align: center;
   font-size: 1.3rem;
   color: #ffffff;
 }
 @media (min-width: 992px) {
-  .main h1 {
+  main h1 {
     font-size: 2rem;
   }
 }
-.main .precentacion {
+main .precentacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,40 +100,40 @@ header .bg-body-tertiary {
   padding: 1rem;
   margin-top: 1rem;
 }
-.main .precentacion img {
+main .precentacion img {
   border-radius: 2% 28% 2% 35%;
-  width: 250px;
+  width: 280px;
   height: 330px;
 }
 @media (min-width: 992px) {
-  .main .precentacion img {
+  main .precentacion img {
     width: 400px;
-    height: 480px;
+    height: 450px;
   }
 }
-.main .precentacion .text {
+main .precentacion .text {
   margin: 2rem;
   color: rgb(244, 241, 241);
   padding: 2rem;
   background: rgba(175, 175, 185, 0.193);
   box-shadow: 1px 5px 23px rgb(79, 77, 76);
 }
-.main .precentacion .text h2 {
+main .precentacion .text h2 {
   font-size: 2rem;
 }
 @media (min-width: 992px) {
-  .main .precentacion .text h2 {
+  main .precentacion .text h2 {
     font-size: 3rem;
   }
 }
-.main .precentacion .text p {
+main .precentacion .text p {
   text-align: center;
   font-size: 1rem;
   padding-top: 1rem;
   color: rgba(184, 180, 180, 0.918);
 }
 @media (min-width: 992px) {
-  .main .precentacion .text p {
+  main .precentacion .text p {
     font-size: 1.5rem;
   }
 }
@@ -137,6 +142,13 @@ header .bg-body-tertiary {
   width: 100%;
   height: 2px;
   background: rgb(255, 255, 255);
+  margin: 1rem 0;
+}
+
+.sep2 {
+  width: 100%;
+  height: 3px;
+  background: rgb(124, 118, 118);
   margin: 1rem 0;
 }
 
@@ -153,22 +165,53 @@ header .bg-body-tertiary {
   font-size: 2rem;
   padding-bottom: 1rem;
   font-family: "Russo One", sans-serif;
+  padding-top: 2rem;
+}
+@media (min-width: 992px) {
+  .formacion h3 {
+    font-size: 3rem;
+  }
 }
 .formacion h4 {
   font-size: 1.2rem;
   font-family: "Russo One", sans-serif;
   margin: 2rem 0;
+  margin-top: 5rem;
+}
+@media (min-width: 992px) {
+  .formacion h4 {
+    font-size: 3rem;
+  }
 }
 .formacion h5 {
   font-size: 1.5rem;
   margin: 2rem 0;
-  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+@media (min-width: 992px) {
+  .formacion h5 {
+    font-size: 2rem;
+  }
 }
 .formacion p {
   padding: 1rem;
   font-size: 1rem;
   box-shadow: 3px 5px 23px rgb(75, 64, 58);
-  margin: 2rem;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .formacion p {
+    font-size: 1.2rem;
+    max-width: 67%;
+    padding: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .formacion p {
+    font-size: 1.4rem;
+    max-width: 65%;
+    padding: 4rem;
+  }
 }
 .formacion p a {
   text-decoration: none;
@@ -176,12 +219,25 @@ header .bg-body-tertiary {
 }
 .formacion ol {
   box-shadow: 3px 5px 23px rgb(75, 64, 58);
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .formacion ol {
+    margin: 0 7rem;
+  }
 }
 .formacion ol li {
   padding: 1rem;
   margin: 0.5rem;
   font-size: 1rem;
-  background: rgb(218, 214, 214);
+  background: rgba(218, 214, 214, 0.618);
+}
+@media (min-width: 992px) {
+  .formacion ol li {
+    font-size: 1.4rem;
+    padding: 3rem;
+    margin: 2rem;
+  }
 }
 
 .certificados {
