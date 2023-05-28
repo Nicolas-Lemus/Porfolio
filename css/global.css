@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: rgb(7, 32, 56);
 }
 
 header {
@@ -25,9 +25,9 @@ header nav .navbar-nav a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header nav .navbar-nav a:hover {
-  color: rgba(158, 84, 34, 0.989);
+  color: rgba(52, 86, 158, 0.989);
   text-decoration: underline;
-  filter: drop-shadow(5px 5px 10px rgb(201, 133, 7));
+  filter: drop-shadow(5px 5px 10px rgb(4, 250, 238));
 }
 header .bg-body-tertiary {
   background: none !important;
@@ -116,7 +116,7 @@ main .precentacion .text {
   color: rgb(244, 241, 241);
   padding: 2rem;
   background: rgba(175, 175, 185, 0.193);
-  box-shadow: 1px 5px 23px rgb(79, 77, 76);
+  box-shadow: 1px 5px 23px rgb(12, 121, 222);
 }
 main .precentacion .text h2 {
   font-size: 2rem;
@@ -142,13 +142,13 @@ main .precentacion .text p {
   width: 100%;
   height: 2px;
   background: rgb(255, 255, 255);
-  margin: 1rem 0;
+  margin: 5rem 0;
 }
 
 .sep2 {
   width: 100%;
   height: 3px;
-  background: rgb(124, 118, 118);
+  background: rgba(8, 65, 135, 0.606);
   margin: 1rem 0;
 }
 
@@ -176,7 +176,7 @@ main .precentacion .text p {
   font-size: 1.2rem;
   font-family: "Russo One", sans-serif;
   margin: 2rem 0;
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 @media (min-width: 992px) {
   .formacion h4 {
@@ -196,7 +196,7 @@ main .precentacion .text p {
 .formacion p {
   padding: 1rem;
   font-size: 1rem;
-  box-shadow: 3px 5px 23px rgb(75, 64, 58);
+  box-shadow: 3px 5px 23px rgba(2, 38, 95, 0.517);
   margin: 2rem auto;
 }
 @media (min-width: 768px) {
@@ -218,7 +218,7 @@ main .precentacion .text p {
   color: rgb(1, 56, 254);
 }
 .formacion ol {
-  box-shadow: 3px 5px 23px rgb(75, 64, 58);
+  box-shadow: 3px 5px 23px rgba(2, 38, 95, 0.517);
   padding: 2rem;
 }
 @media (min-width: 992px) {
