@@ -1,5 +1,6 @@
 body{
-    background: rgb(7, 32, 56);
+    /* background: rgb(7, 32, 56); */
+    background-image: radial-gradient(circle at 50% -20.71%, #000000 0, #081a78 25%, #082153 50%, #0b1b31 75%, #1b325b 100%);
 }
 header{
     display: flex;
@@ -17,14 +18,26 @@ header{
 
     nav{
         .nav-link{
-            color: rgb(69, 63, 63);
-            font-size: 1.2rem;
+            color: rgb(2, 28, 99);
+            font-size: .8rem;
             margin-left: 1rem;
+
+            @media (min-width:992px) {
+                font-size: 1.2rem;
+            }
         }
         .navbar-nav {
+            li{
+                border-bottom:1px outset rgb(4, 56, 147);
+
+                @media (min-width:992px) {
+                    border: none;
+                }
+            }
             a{
-                color: rgb(99, 96, 96);
+                color: rgb(4, 1, 39);
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: .5rem;
                 &:hover{
                     color: rgba(52, 86, 158, 0.989);
                     text-decoration: underline;
@@ -48,7 +61,7 @@ main{
     }
     .name{
         text-align: center;
-        color: rgb(162, 156, 156);
+        color: rgb(230, 210, 210);
         padding-top:7rem;
         span{
             text-align: center;
@@ -217,12 +230,69 @@ main{
             padding: 1rem;
             margin:0.5rem;
             font-size: 1rem;
-            background: rgba(218, 214, 214, 0.618);
+            background: rgba(255, 255, 255, 0.267);
+            border-radius: 30px;
 
             @media (min-width:992px){
                 font-size: 1.4rem;
                 padding:3rem;
                 margin:2rem;
+            }
+        }
+    }
+}
+.proyectos{
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        color: #ffffff;
+        margin-bottom: 3rem;
+    }
+    .proyectos__imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            margin-top: 3rem;
+            color: #ffffff;
+            font-size: 1.4rem;
+        }
+        
+        h4{
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+        }
+        img{
+            margin: 0.5rem;
+            width: 315px;
+
+            @media (min-width:765px){
+                width: 600px;
+            }
+        }
+        button{
+            color: #1b325b;
+            background: #ffffff;
+            border-radius: 50px;
+
+            &:hover{
+                background: #1b325b;
+                scale: 1.1;
+                color: #ffffff;
+            }
+            
+            a{
+                font-size: 1rem;
+                text-decoration: none;
+                padding: 0.3rem;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                &:hover{
+                    color: #ffffff;
+                }
             }
         }
     }
@@ -240,7 +310,7 @@ main{
         margin:2rem 0;
     }
     h5{
-        font-size: 2rem;
+        font-size: 1.4rem;
         margin: 2rem 0;
 
         @media (min-width:992px){
@@ -282,6 +352,6 @@ footer{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: -0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
