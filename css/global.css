@@ -1,6 +1,7 @@
 body {
-  /* background: rgb(7, 32, 56); */
-  background-image: radial-gradient(circle at 50% -20.71%, #000000 0, #081a78 25%, #082153 50%, #0b1b31 75%, #1b325b 100%);
+  background: rgb(0, 0, 0);
+  /*     background-image: radial-gradient(circle at 50% -20.71%, #000000 0, #081a78 25%, #082153 50%, #0b1b31 75%, #1b325b 100%);
+   */
 }
 
 header {
@@ -303,6 +304,7 @@ main .precentacion .text p {
 .proyectos .proyectos__imagenes img {
   margin: 0.5rem;
   width: 315px;
+  height: auto;
 }
 @media (min-width: 765px) {
   .proyectos .proyectos__imagenes img {
