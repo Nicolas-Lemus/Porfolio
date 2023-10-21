@@ -8,7 +8,7 @@ header{
     justify-content: space-between;
     background: rgb(255, 255, 255);
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     width: 100%;
 
     .logo{
@@ -262,6 +262,7 @@ main{
     h2{
         text-align: center;
         font-size: 3rem;
+        font-family: 'Russo One', sans-serif;
         color: #ffffff;
         margin-bottom: 3rem;
         @media (min-width:992px){
@@ -275,6 +276,7 @@ main{
         align-items: center;
 
         h3{
+            font-family:'Russo One', sans-serif;
             margin-top: 3rem;
             color: #ffffff;
             font-size: 1.4rem;
@@ -284,6 +286,7 @@ main{
             color: #ffffff;
             font-size: 1.4rem;
             margin-bottom: 3rem;
+            font-family: 'Times New Roman', Times, serif;
         }
         img{
             margin: 0.5rem;
@@ -298,21 +301,24 @@ main{
             }
         }
         button{
-            color: #1b325b;
             background: #ffffff;
             margin-bottom: 2rem;
             border-radius: 50px;
+            font-weight: 700;
+            padding: .3rem;
 
             &:hover{
-                background: #1b325b;
-                scale: 1.1;
+                background: #000000;
+                transition: 1s all;
                 color: #ffffff;
+                border: 1px solid white;
             }
             
             a{
+                color: #000;
                 font-size: 1rem;
                 text-decoration: none;
-                padding: 0.3rem;
+                padding: 1rem;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
                 &:hover{
@@ -333,6 +339,7 @@ main{
     h2{
         font-size: 3rem;
         margin:2rem 0;
+        font-family:'Russo One', sans-serif;
     }
     h5{
         font-size: 1.4rem;
@@ -358,6 +365,7 @@ footer{
             color: rgb(255, 255, 255);
             font-size: 2rem;
             margin-bottom: 2rem;
+            font-family:'Russo One', sans-serif;
         }
         img{
             margin: 1rem;
